@@ -1,0 +1,193 @@
+p {
+  color: white;
+  padding-right: 30px;
+  padding-left: 30px;
+  font-size: 16px;
+}
+
+#sedan.enlarged,
+#SUVs.enlarged,
+#luxury.enlarged {
+  width: 80%;
+  height: 600px;
+  min-width: 40vw; /* Make sure this minimum width works with your font-size */
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  z-index: 10;
+  text-align: center;
+  margin-left: 0;
+}
+
+#sedan.enlarged p,
+#SUVs.enlarged p,
+#luxury.enlarged p {
+  font-size: 30px; /* or specify a specific size like 20px, 1.5em, etc. */
+  overflow-wrap: break-word;
+}
+
+#sedan.enlarged h1,
+#SUVs.enlarged h1,
+#luxury.enlarged h1 {
+  font-size: 60px; /* or specify a specific size like 20px, 1.5em, etc. */
+}
+
+.more {
+  position: fixed;
+  border-radius: 40px;
+  margin-left: 30px;
+  width: 150px;
+  background-color: white;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 0;
+  margin-top: 30px;
+}
+
+.container {
+  display: grid;
+  width: 100%;
+  height: 85vh; /* I added a height relative to viewport height. Adjust this value according to your needs */
+  max-height: 100vh; /* I added a max height relative to viewport height. Adjust this value according to your needs */
+}
+
+.header {
+  color: white;
+  padding-left: 30px;
+  font-size: 30px;
+  letter-spacing: -3px;
+}
+
+#sedanbtn {
+  color: orange;
+}
+
+#sedanbtn:hover {
+  background-color: orange;
+  color: white;
+  border: 2px solid white;
+}
+
+#suvbtn {
+  color: darkcyan;
+}
+
+#suvbtn:hover {
+  background-color: darkcyan;
+  color: white;
+  border: 2px solid white;
+}
+
+#luxbtn {
+  color: darkgreen;
+}
+
+#luxbtn:hover {
+  background-color: darkgreen;
+  color: white;
+  border: 2px solid white;
+}
+
+/* Default mobile styles */
+#sedan,
+#SUVs,
+#luxury {
+  height: 30vh;
+  width: 80vw;
+  margin-left: 40px;
+}
+
+#sedan {
+  top: 20%;
+  background-color: orange;
+}
+
+#SUVs {
+  top: 20%; /* Adjust to control the vertical gap on mobile */
+  background-color: lightblue;
+}
+
+#luxury {
+  top: 20%; /* Adjust to control the vertical gap on mobile */
+  background-color: darkgreen;
+}
+
+.attribution {
+  font-size: 9px;
+  text-align: center;
+  position: fixed;
+  bottom: 10px;
+  left: 40%;
+}
+
+/* Larger screen styles */
+@media screen and (min-width: 950px) {
+  .container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    column-gap: 0;
+  }
+
+  .more {
+    display: flex;
+    position: fixed;
+    padding-left: 20px;
+    text-align: center;
+    top: 70%;
+    margin-left: 40px;
+    width: 120px;
+  }
+
+  #sedan.enlarged,
+  #SUVs.enlarged,
+  #luxury.enlarged {
+    width: 80%;
+    height: 600px;
+    min-width: 40vw; /* Make sure this minimum width works with your font-size */
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    z-index: 10;
+    text-align: center;
+  }
+
+  #sedan,
+  #SUVs,
+  #luxury {
+    flex-direction: column;
+    width: 20vw;
+    height: 60vh;
+    display: flex;
+    position: relative;
+    left: 85%;
+    top: 0%;
+    margin: 0;
+  }
+
+  .header {
+    color: white;
+    padding-top: 80px;
+    padding-left: 50px;
+    font-size: 40px;
+    letter-spacing: -3px;
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    position: fixed;
+    bottom: 10px;
+    left: 40%;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}
