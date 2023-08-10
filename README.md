@@ -1,8 +1,8 @@
-# React + Vite
+<h1>Three Column Layout</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p>A responsive three column layout created using HTML / CSS / React.</p>
 
-Currently, two official plugins are available:
+<p>If you click on the Learn More button, it expands the column for better visibility.</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p>When expanded, click anywhere on the page to zoom back out and return back to the original layout.</p>
+
